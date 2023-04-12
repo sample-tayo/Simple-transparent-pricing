@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body {
+
+  font-family: "Poppins", sans-serif;
+  background-color: #ae9eac;
+} */
+
+body {
+  background-color: #f2f2f2; /* Set background color of page */
+  display: flex; /* Use flexbox to center the container */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Set height of page to viewport height */
+  font-family: "Poppins", sans-serif;
+}
+/* toggle switch button style */
+
+.button-box {
+  width: 250px;
+  margin: 35px auto;
+  margin-top: 0px;
+  position: relative;
+  border-radius: 30px;
+  background: #fff;
+}
+
+.toggle-btn {
+  padding: 15px 40px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  text-align: center;
+}
+
+#btn {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 125px;
+  height: 100%;
+  background: #5f30e2;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.main-container {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2%;
+  background-color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+h2 {
+  font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 1.2em;
+  color: rgb(153, 153, 153);
+}
+
+.flex-container {
+  display: flex;
+  position: relative;
+  margin: 150px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  justify-content: space-between;
+}
+
+.box {
+  height: 400px;
+  width: 350px;
+  border-radius: 4%;
+  position: relative;
+}
+
+/* styling for left box container  */
+
+.left-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f9f9fb;
+}
+
+.left-flex-container ul {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+  color: #090922;
+}
+
+.uil-check {
+  color: #ffffff;
+  background-color: #5f30e2;
+  width: 25px;
+  border-radius: 50%;
+}
+
+.uil-times {
+  color: #ae9eac;
+  width: 25px;
+  border: 1px solid #ae9eac;
+  border-radius: 50%;
+}
+
+/* styling for right box container */
+/* TO BE EDITED PROPERLY */
+
+.right-flex-container {
+  display: flex;
+  align-content: space-between;
+  /* position: absolute; */
+}
+
+input[type="radio"] {
+  appearance: none;
+  border: 1px solid #d3d3d3;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  content: none;
+  outline: none;
+  margin: 0;
+  margin-left: 20px;
+  background-color: white;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+input[type="radio"]:checked {
+  appearance: none;
+  outline: none;
+  padding: 0;
+  content: none;
+  border: none;
+  background-color: white;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #5f30e2;
+}
+
+input[type="radio"]:checked::before {
+  position: absolute;
+  color: #5f30e2 !important;
+  content: "\00A0\2713\00A0" !important;
+  border: 2px solid #d3d3d3;
+  font-weight: bolder;
+  font-size: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding: 0;
+  margin: -10px 0 0 0;
+  position: absolute;
+}
+
+.save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 20px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #f0beb1;
+  opacity: 50%;
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+.save-text {
+  font-size: 12px;
+  color: white;
+}
+.right-flex-container ul {
+  position: absolute;
+  flex-direction: column;
+  /* width: 400px; */
+}
+
+.right-flex-container ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 90px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+  border: 1px solid rgb(192, 192, 192);
+}
+
+.list-style:hover {
+  background-color: #5f30e2;
+}
+
+.radio-btn {
+  margin-left: 20px;
+}
+.amount {
+  flex-grow: 1;
+  margin: 0;
+  color: #090922;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.intro-flex {
+  margin-left: 20px;
+  color: #090922;
+}
+
+.payment-option {
+  font-size: 18px;
+  margin: 0;
+  text-align: left;
+}
+
+.s-amount {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.s-amount span {
+  font-size: 10px;
+}
+/* bottom-line */
+.bottom-line {
+  margin: auto;
+  margin-top: 10px;
+  width: 80%;
+  border: 1px solid #d3d3d3;
+}
+
+/* bottom container style */
+.bottom-container {
+  display: flex;
+  margin: 0 100px;
+  justify-content: space-between;
+}
+
+.left-bottom {
+  display: flex;
+}
+
+.accept-your-price {
+  margin: 16px 10px;
+  font-size: 15px;
+}
+
+.down-save {
+  margin-top: 3px;
+  margin-left: 0;
+  width: 60px;
+  height: 20px;
+  font-size: 10px;
+}
+
+/* togglr btn */
+
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.toggle-btn-new {
+  cursor: pointer;
+  /* text-indent: -9999px; */
+  width: 70px;
+  height: 30px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+.toggle-btn-new:after {
+  content: "";
+  position: absolute;
+  top: 2.5px;
+  left: 5px;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 45px;
+  transition: 0.3s;
+}
+
+input:checked + .toggle-btn-new {
+  background: #76ca30;
+}
+
+input:checked + .toggle-btn-new:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+.toggle-btn-new:active:after {
+  width: 70px;
+}
+
+.choose {
+  background-color: #5f30e2;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffb1b1;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  margin: 0;
+  margin-top: 20px;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+}
+
+.choose:hover {
+  background-color: #5f30e2b6;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .right-flex-container {
+    margin-top: 20px;
+  }
+);
